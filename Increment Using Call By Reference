@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+void increment(int &x) {
+    int a = 5;      // fixed value
+    x = x + a;
+}
+int main() {
+    int x;
+    cout << "Enter a number: ";
+    cin >> x;       // take only one input
+    increment(x);
+    cout << "Result: " << x << endl;
+    return 0;
+}
+
+
+/*
+Output :
+Enter a number: 23
+Result: 28
+*/
